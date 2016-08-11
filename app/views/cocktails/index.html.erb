@@ -1,5 +1,12 @@
-<h1 class="text-center">Du jus et des glaçons</h1>
-<p class="text-center"><%= link_to "Add a new cocktail", new_cocktail_path %></p>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <h1 class="text-center">Du jus et des glaçons</h1>
+        <p class="text-center"><%= link_to "Add a new cocktail", new_cocktail_path %></p>
+    </div>
+  </div>
+</div>
+
 
 <div class="container">
   <div class="row">
@@ -9,10 +16,14 @@
           <div class="card-category">Alcohol</div>
           <div class="card-description">
             <h2><%= cocktail.name  %></h2>
-            <p><%= cocktail.ingredients %></p>
+            <ul class="list-inline">
+              <% cocktail.ingredients.each do |ingredient|%>
+                <li><%= ingredient.name %></li>
+              <% end %>
+            </ul>
         </div>
+       <%= link_to "", cocktail_path(cocktail), class: "card-link" %>
       </div>
-      <%= link_to cocktail.name, cocktail_path(cocktail) %>
     </div>
 
     <% end %>
