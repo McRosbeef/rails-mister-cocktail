@@ -9,3 +9,8 @@
 Ingredient.create(name: "lemon")
 Ingredient.create(name: "ice")
 Ingredient.create(name: "mint leaves")
+
+Cocktail.create!(name: "Jolie cul")
+Cocktail.create!(name: "Requin dormeur")
+Cocktail.create!(name: "Fire on floor")
+Cocktail.create!(name: "Make it burn")
