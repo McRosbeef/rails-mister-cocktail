@@ -23,3 +23,13 @@
 .bg-dark-blue {
   background: #3b5998;
 }
+
+h1 {
+  font-size: 40px;
+  font-family: $title-font;
+  color: rgba(52, 152, 219,1)
+}
+
+h1:hover {
+  color: rgba(52, 152, 219,0.7)
+}
