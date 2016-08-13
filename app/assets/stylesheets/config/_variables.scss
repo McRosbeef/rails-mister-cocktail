@@ -6,7 +6,16 @@
 $base-font: "Open Sans", "Helvetica", "sans-serif";
 $header-font: "Raleway", "Helvetica", "sans-serif";
 @import url(https://fonts.googleapis.com/css?family=Indie+Flower);
-$title-font: 'Indie Flower', cursive;
+$_title-font: 'Indie Flower', cursive;
+
+@import 'https://fonts.googleapis.com/css?family=Poiret+One';
+$title-font: 'Poiret One', cursive;
+
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:700,400);
+$__title-font: 'PT Sans', sans-serif;
+
+@import 'https://fonts.googleapis.com/css?family=Handlee';
+$font-family: 'Handlee', cursive;
 
 // Local fonts (uncomment following lines)
 // @font-face {
@@ -33,6 +42,7 @@ $blue: #469AE0;
 $yellow: #FDB631;
 $orange: #E67E22;
 $green: #32B796;
+$my-blue: rgba(52, 152, 219,0.2);
 
 // Gray scale
 $gray-darker:  lighten(#000, 13.5%); // #222

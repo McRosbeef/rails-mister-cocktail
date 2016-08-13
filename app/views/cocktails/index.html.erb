@@ -1,33 +1,50 @@
-<div class="container">
-  <div class="row">
-    <div class="col-xs-12">
-      <h1 class="text-center">Du jus et des glaçons</h1>
-        <p class="text-center"><%= link_to "Add a new cocktail", new_cocktail_path %></p>
-    </div>
-  </div>
-</div>
+<%= render 'navbar' %>
 
+<div class="wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
 
-<div class="container">
-  <div class="row">
-    <% @cocktails.each do |cocktail|  %>
-      <div class="col-xs-12 col-md-6">
-        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('background.jpg');">
-          <div class="card-category">Alcohol</div>
-          <div class="card-description">
-            <h2><%= cocktail.name  %></h2>
-            <ul class="list-inline">
-              <% cocktail.ingredients.each do |ingredient|%>
-                <li><%= ingredient.name %></li>
-              <% end %>
-            </ul>
-        </div>
-       <%= link_to "", cocktail_path(cocktail), class: "card-link" %>
+          <br>
+          <br>
+          <br>
+          <p class="text-center"><%= link_to "Add a new cocktail", new_cocktail_path %></p>
       </div>
     </div>
-
-    <% end %>
-
-
   </div>
+
+  <br>
+  <br>
+
+
+
+
+  <div class="container">
+    <div class="row">
+      <% @cocktails.each do |cocktail|  %>
+        <div class="col-xs-12 col-md-6">
+          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://unsplash.it/400/300/?random');">
+            <div class="card-category">Alcohol</div>
+            <div class="card-description">
+              <h2><%= cocktail.name  %></h2>
+              <ul class="list-inline">
+                <% cocktail.ingredients.each do |ingredient|%>
+                  <li><%= ingredient.name %></li>
+                <% end %>
+              </ul>
+          </div>
+         <%= link_to "", cocktail_path(cocktail), class: "card-link" %>
+        </div>
+      </div>
+
+      <% end %>
+
+    </div>
+  </div>
+    <br>
+    <br>
+    <br>
+    <br>
 </div>
+
+
