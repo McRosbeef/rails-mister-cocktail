@@ -5,17 +5,15 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:400,100,300,700,500");
 $base-font: "Open Sans", "Helvetica", "sans-serif";
 $header-font: "Raleway", "Helvetica", "sans-serif";
-@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
-$_title-font: 'Indie Flower', cursive;
-
-@import 'https://fonts.googleapis.com/css?family=Poiret+One';
-$title_-font: 'Poiret One', cursive;
-
-@import url(https://fonts.googleapis.com/css?family=PT+Sans:700,400);
-$title-font: 'PT Sans', sans-serif;
 
 @import 'https://fonts.googleapis.com/css?family=Handlee';
 $font-family: 'Handlee', cursive;
+
+@import 'https://fonts.googleapis.com/css?family=Bungee|Bungee+Hairline|Bungee+Inline|Bungee+Shade';
+$title-font: 'Bungee Shade', cursive;
+$font-family: 'Bungee', cursive;
+$font-family: 'Bungee Inline', cursive;
+$font-family: 'Bungee Hairline', cursive;
 
 // Local fonts (uncomment following lines)
 // @font-face {
