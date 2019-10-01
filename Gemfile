@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 #
 gem 'bootstrap-sass'
 gem 'font-awesome-sass'
-gem 'simple_form'
+gem 'simple_form', '>= 5.0.0'
 gem 'autoprefixer-rails'
 
 ruby '2.3.1'
